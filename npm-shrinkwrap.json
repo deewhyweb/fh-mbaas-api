@@ -2266,8 +2266,8 @@
     },
     "fh-sync": {
       "version": "2.0.0",
-      "from": "git://github.com/deewhyweb/fh-sync.git#bugfix/remove_hash_from_deleted_ref",
-      "resolved": "git://github.com/deewhyweb/fh-sync.git#b717e393b3d8787554bd38e280194db6188c208a",
+      "from": "git+https://github.com/deewhyweb/fh-sync.git#bugfix/remove_hash_from_deleted_ref",
+      "resolved": "git+https://github.com/deewhyweb/fh-sync.git#b717e393b3d8787554bd38e280194db6188c208a",
       "dependencies": {
         "async": {
           "version": "2.6.1",

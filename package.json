@@ -11,7 +11,7 @@
     "fh-mbaas-express": "^5.10.0",
     "fh-security": "0.2.1",
     "fh-statsc": "0.3.0",
-    "fh-sync": "git://github.com/deewhyweb/fh-sync.git#bugfix/remove_hash_from_deleted_ref",
+    "fh-sync": "git+https://github.com/deewhyweb/fh-sync.git#bugfix/remove_hash_from_deleted_ref",
     "lodash-contrib": "^393.0.1",
     "memcached": "^2.0.0",
     "mongodb-uri": "0.9.7",
