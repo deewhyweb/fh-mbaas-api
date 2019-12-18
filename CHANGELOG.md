@@ -4,6 +4,47 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [9.1.5] - Friday Apr 26, 2019
+### Change
+- Revert unifiedpush-node-sender dependency to 0.12.1 to address breaking change introduced
+
+## [9.1.4] - Thurs Nov 1, 2018
+### Change
+- Upgrade fh-mbaas-express to 6.1.2 ( Patch version ). console.debug is not available in nodejs 6.x
+
+## [9.1.3] - Fri Oct 19, 2018
+### Change
+- Upgrade fh-db to 3.3.2 ( Patch version ). Adds funtionality to fix JavaScript Dates getting overwritten as Strings when saved in the databrowser. Dates need to be saved as 
+`
+{
+   $fhdate: "2018-10-10T11:54:12.366Z"
+}
+`
+. The SERIALISE_FH_DATES env var can be set on the studio to return JavaScript Dates from fh-db in this format now.
+
+## [9.1.2] - Thu Sept 26, 2018
+### Change
+- Upgrade the redis lib to 2.8.0 ( Minor version )
+
+## [9.1.1] - Thu Sept 26, 2018
+### Change
+- Upgrade unifiedpush-node-sender dependency to 0.16.0
+- Upgrade request dependency to 2.88.0
+- Upgrade fh-mbaas-express to 6.1.1
+
+## [9.1.0] - Wed Sep 19, 2018
+### Changed
+- Upgraded `fh-mbaas-express` to `6.1.0` for updated caching of service calls.
+
+## [9.0.0] - Thu Aug 16, 2018
+### Changed
+- Removed support for Node4
+- Added support for Node8 and Node10
+
+## [8.2.4] - Thu Jul 26, 2018
+### Changed
+- Upgrade fh-sync version from `1.0.14` to `1.0.15` to resolve an issue where the message was not being returned to the client from the collision handler
+
 ## [8.2.3] - Tue Jun 14, 2018
 ### Changed
 - Upgrade fh-db version from `3.3.0` to `3.3.1`
